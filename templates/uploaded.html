@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+.footer{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: gray;
+color: white;
+text-align: center;
+}
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.predictor {
+  position: center;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+.predict-form-title {
+  display: block;
+  width: 100%;
+  font-size: 39px;
+  color: gray;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 59px;
+}
+.wrap-input100 {
+  width: 25%;
+  position: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 13px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
+}
+.bg1 {background-color: #f7f7f7;}
+.label-input100 {
+  font-size: 15px;
+  color: #393939;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.input100 {
+  display: block;
+  width: 80%;
+  background: transparent;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+.all-center{
+  position: center;
+  display: inline-block;
+}
+.form{
+    text-align: center;
+}
+.navbar a:hover {
+  background-color: #000;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  background-color: #4CAF50;
+}
+.navbar {
+  width: 100%;
+  background-color: gray;
+  overflow: auto;
+}
+</style>
+
+</head>
+<header>
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook Post Predictor</a>
+        <a href="#"><i class="fa fa-info" aria-hidden="true"></i></i> More info</a>
+        <a href="https://adlyfany8.wixsite.com/curriculum"><i class="fa fa-fw fa-user"></i>Contact me</a>
+    </div>
+</header>
+    <body>
+        <p> Archivo cargado </p>
+        <form action="http://localhost:5000/uploader" method="POST">
+            <span class="predict-form-title">
+                {{ bestPredictor }}
+            </span>
+        </form>
+        <form action="http://localhost:5000/formulario" method="POST" class="form" >
+        <div class="wrap-input100 bg1 all-center" id="xType" name="xType">
+            <span class="label-input100">Facebook post Type</span>
+            <select id="xType" name="xType" class="input100">
+                    <option value="1">Photo</option>
+                    <option value="2">Multiple photos</option>
+                    <option value="3">Video</option>
+                    <option value="4">Link</option>
+                </select>
+        </div>
+        <div class="wrap-input100 bg1 all-center" id="xDate" name="xDate">
+            <span class="label-input100">Facebook post Date</span>
+            <select id="xDate" name="xDate" class="input100">
+                    <option value="1">Sunday</option>
+                    <option value="2">Monday</option>
+                    <option value="3">Tuesday</option>
+                    <option value="4">Wednesday</option>
+                    <option value="5">Thursday</option>
+                    <option value="6">Friday</option>
+                    <option value="7">Saturday</option>
+                </select>
+        </div>
+        <div class="wrap-input100 bg1 all-center" id="xHour" name="xHour">
+            <span class="label-input100"> Facebook post Hour</span>
+            <select id="xHour" name="xHour" class="input100"> 
+                    <option value="0">00:00 hrs</option>
+                    <option value="1">01:00 hrs</option>
+                    <option value="2">02:00 hrs</option>
+                    <option value="3">03:00 hrs</option>
+                    <option value="4">04:00 hrs</option>
+                    <option value="5">05:00 hrs</option>
+                    <option value="6">06:00 hrs</option>
+                    <option value="7">07:00 hrs</option>
+                    <option value="8">08:00 hrs</option>
+                    <option value="9">09:00 hrs</option>
+                    <option value="10">10:00 hrs</option>
+                    <option value="11">11:00 hrs</option>
+                    <option value="12">12:00 hrs</option>
+                    <option value="13">13:00 hrs</option>
+                    <option value="14">14:00 hrs</option>
+                    <option value="15">15:00 hrs</option>
+                    <option value="16">16:00 hrs</option>
+                    <option value="17">17:00 hrs</option>
+                    <option value="18">18:00 hrs</option>
+                    <option value="19">19:00 hrs</option>
+                    <option value="20">20:00 hrs</option>
+                    <option value="21">21:00 hrs</option>
+                    <option value="22">22:00 hrs</option>
+                    <option value="23">23:00 hrs</option>
+                </select>
+        </div>        
+                <br>
+                <span class="label-input100">
+                TAKING INTO ACCOUNT THE PERFORMANCE OF YOUR PAGE SO FAR, 
+                IN A REALISTIC ENVIRONMENT, 
+                ENTER THE EXPECTED VALUES FOR YOUR NEXT POST
+                </span>
+                </br></br>
+                    <div class="wrap-input100 bg1 all-center">
+                        <span class="label-input100">SHARE</span>
+                        <input class="input100" id="xShare" name="xShare" placeholder="Enter shares expected">
+                    </div>
+                    <div class="wrap-input100 bg1 all-center" >
+                        <span class="label-input100">REACTIONS</span>
+                        <input class="input100" id="xReactions" name="xReactions" placeholder="Enter reactions expected">
+                    </div>
+                    <div class="wrap-input100 bg1 all-center" >
+                        <span class="label-input100">COMMENTS</span>
+                        <input class="input100" id="xComment" name="xComment" placeholder="Enter comments expected">
+                    </div>
+                    </br> 
+                    <div class="all-cecnter">              
+                        <input type="submit" value="Submit" class="btn">
+                        <!--<button class="btn" type="submit">Predecir</button>-->                
+                    </div>
+        </form>
+        <div class="footer">
+        <p>By Adlay Levy<p>
+        </div>
+    </body>
+</html>

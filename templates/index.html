@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+.upload-btn-wrapper {
+  position: center;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form{
+    text-align: center;
+}
+.footer{
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: gray;
+   color: white;
+   text-align: center;
+}
+.navbar {
+  width: 100%;
+  background-color: gray;
+  overflow: auto;
+}
+.active {
+  background-color: #4CAF50;
+}
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+.wrap-input100 {
+  width: 50%;
+  position: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 13px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
+}
+.input100 {
+  display: block;
+  width: 80%;
+  background: transparent;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+</style>
+
+</head> 
+<header>
+    <div class="navbar">
+        <a class="active" href="index.html"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook Post Predictor</a>
+        <a href="#"><i class="fa fa-info" aria-hidden="true"></i></i> More info</a>
+        <a href="https://adlyfany8.wixsite.com/curriculum"><i class="fa fa-fw fa-user"></i>Contact me</a>
+    </div>
+</header>
+<body>
+    
+    <form action = "http://localhost:5000/uploader" method = "POST" enctype = "multipart/form-data" class="form">
+     
+        <div class="upload-btn-wrapper" >
+            <input type = "file" name = "file" /></br>            
+            <button class="btn">Upload .csv file</button>
+            <!-- <input type = "submit"/> -->
+        </div>
+    </form>
+
+    <div class="footer">
+        <p>By Adlay Levy<p>
+    </div>
+</body>
+</html>
