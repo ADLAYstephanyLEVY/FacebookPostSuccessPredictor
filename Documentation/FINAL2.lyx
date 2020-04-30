@@ -1,0 +1,4279 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran-CompSoc
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options journal
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename LYX source/logo_FIT.png
+	lyxscale 67
+	scale 67
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 11.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename LYX source/logo_UM.png
+	lyxscale 10
+	scale 10
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size huge
+Universidad de Montemorelos 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Facultad de Ingeniería y Tecnología
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Ingeniería en Sistemas Computacionales
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 1.8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size huge
+Prediction of the impact of Facebook posts with machine learning
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 1.7cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Adlay Stephany Levy Méndez
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+1140318
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Asesor: Dr.
+ Germán Harvey Alférez Salinas
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 1.8cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+Montemorelos, Nuevo León, México
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+27 de abril de 2020
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\size larger
+\begin_inset VSpace 8.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 8cm
+\end_inset
+
+
+\series bold
+\shape italic
+Abstract
+\series default
+\shape default
+ 
+\end_layout
+
+\begin_layout Standard
+Facebook is the most popular social network.
+ It is seen as entertainment and also as a tool.
+ This tool can help businesses to advertise themselves and see how much
+ scope they have.
+ In this research work we use Machine Learning to automatize the prediction
+ of the success of posts to be published on Facebook.
+ As a case study, we used information collected from the Facebook page of
+ Montemorelos University.
+ In order to predict the success of Facebook posts, we developed a web applicati
+on.
+ This web application allows users to upload a data set of the performance
+ of a Facebook page.
+ Our tool uses this information to train 4 classification models with 4
+ different Machine Learning algorithms.
+ Then, it chooses the model with the highest accuracy and shows the result
+ of the most accurate one.
+ Then, the user can use this model to predict the impact of a new post.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\shape italic
+Index terms:
+\series default
+\shape default
+ Facebook, Machine Learning, prediction, web application.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Prediction of the impact of Facebook posts with machine learning
+\end_layout
+
+\begin_layout Author
+Adlay
+\begin_inset space ~
+\end_inset
+
+Levy and Germán
+\begin_inset space ~
+\end_inset
+
+H.
+\begin_inset space ~
+\end_inset
+
+Alférez
+\end_layout
+
+\begin_layout Special Paper Notice
+School of Engineering and Technology, Montemorelos University, Mexico
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Paragraph Start
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+F
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+acebook is the biggest social network worldwide.
+ Many people use this network for entertainment.
+ However, there are other users who use it for making themselves known as
+ "influencers", people whose posts reach a high level of engagement.
+ This is something desirable for companies as well.
+ Facebook's success can be attributed to its ability to appeal to both people
+ and businesses and its ability to interact with sites around the web 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "SaigeDriver2019"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nowadays, many companies must make extensive use of social networks to properly
+ engage their customers and to make themselves known through different ways
+ such as advertisement.
+ However, there is a lack of proper tools to predict the success of a new
+ Facebook post.
+ We argue that Machine Learning, a relatively new technology that has made
+ a big impact in many different areas 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Alpaydin2020"
+literal "false"
+
+\end_inset
+
+, can be applied to social network studies.
+ This is why this research work describes a tool that can help users predict
+ the impact, whether positive or negative, of a Facebook post using Machine
+ Learning.
+\end_layout
+
+\begin_layout Subsection
+Problem statement
+\end_layout
+
+\begin_layout Standard
+Since there are Facebook posts that have a better impact than others, it
+ is important to know beforehand the impact of a new post.
+ Despite the relevant need of predicting the impact of Facebook posts, there
+ are no tools that can be used to predict their success.
+\end_layout
+
+\begin_layout Subsection
+Justification
+\end_layout
+
+\begin_layout Standard
+Facebook helps to connect more people than any other company and has become
+ an important asset for many businesses.
+ Facebook has also generated data that is useful for artificial intelligence
+ research 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brugger2015"
+literal "false"
+
+\end_inset
+
+.
+ A research carried out in 2009 confirms the usefulness of the data that
+ Facebook has generated from its beginnings for the benefit of marketing
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Casteleyn2009"
+literal "true"
+
+\end_inset
+
+.
+ It is because this platform has grown immensely since its inception and
+ nowadays it has over 2.5 billion monthly active users 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Jarret2015"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This project intends to take advantage of these opportunities to create
+ a tool that is useful for those who are willing to measure the impact of
+ their posts on Facebook, before the posts are even sent.
+ This tool is intended to be available to any user.
+ This is why the tool is available via a web application.
+ Machine Learning is the core of this project since it provides the mechanisms
+ to create predictive models trained with historical data.
+\end_layout
+
+\begin_layout Subsection
+Objectives
+\end_layout
+
+\begin_layout Itemize
+Create a web application to train four classification models with a data
+ set of Facebook posts.
+ This tool has a front end that allows users to upload a Comma Separated
+ Value (CSV) file with activity information from Facebook posts (e.g.
+ number of likes, type, etc.).
+ Then, the tool automatically uses the data set to train the following classific
+ation algorithms: Support Vector Machines (SVM), K-Nearest Neighbors (KNN),
+ Logistic Regression (LR), and Decision Trees (DT).
+ After training, the system returns the model with the best accuracy.
+ The web application saves the model that offers the best accuracy to be
+ used in future predictions.
+\end_layout
+
+\begin_layout Itemize
+Create a web application that classifies the impact of a new post.
+ Specifically, the user inputs the values of the following features: 
+\begin_inset Quotes eld
+\end_inset
+
+Type
+\begin_inset Quotes erd
+\end_inset
+
+ of post indicating whether it is a photo, video, link, etc.; 
+\begin_inset Quotes eld
+\end_inset
+
+Day
+\begin_inset Quotes erd
+\end_inset
+
+ when the post will be published; 
+\begin_inset Quotes eld
+\end_inset
+
+Hour
+\begin_inset Quotes erd
+\end_inset
+
+ in which the post will be published; and the expected values of 
+\begin_inset Quotes eld
+\end_inset
+
+Likes
+\begin_inset Quotes erd
+\end_inset
+
+, 
+\begin_inset Quotes eld
+\end_inset
+
+Shares
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+Comments
+\begin_inset Quotes erd
+\end_inset
+
+.
+ With the aforementioned information, the algorithm shows the post prediction
+ with the classification of High, Medium, or Low success.
+\end_layout
+
+\begin_layout Itemize
+Evaluate the tool with a case study with data from the Facebook page of
+ Montemorelos University.
+\end_layout
+
+\begin_layout Subsection
+Hypothesis
+\end_layout
+
+\begin_layout Standard
+Machine Learning can be used to predict the negative or positive success
+ of Facebook posts.
+\end_layout
+
+\begin_layout Section
+Theoretical Foundation
+\end_layout
+
+\begin_layout Subsection
+Underpinnings of our Approach
+\end_layout
+
+\begin_layout Standard
+This research project is based on the following concepts as shown in Fig.
+ 1: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Graphics
+	filename LYX source/Underpinnings_of_our_approach.jpg
+	lyxscale 30
+	scale 33
+	rotateOrigin center
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Underpinnings of our approach.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Social Media
+\end_layout
+
+\begin_layout Standard
+Social media is a group of Internet-based applications that are build on
+ the ideological and technological foundations of the Web and that allows
+ the creation and exchange of user-generated content 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kaplan2010"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+With the rise of digital and mobile technologies, interaction on a large
+ scale became easier for individuals than ever before; and as such, a new
+ media age was born where interactivity was placed at the center of new
+ media functions 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Manning2014"
+literal "true"
+
+\end_inset
+
+.
+ One individual can now speak to many and instant feedback is a possibility.
+ 
+\end_layout
+
+\begin_layout Standard
+Most of the social media applications are used primarily for recreation
+ or personal connections.
+ However, they can also be used for work.
+\end_layout
+
+\begin_layout Subsubsection
+Facebook
+\end_layout
+
+\begin_layout Standard
+Is one of the biggest social networks.
+ Facebook began in February of 2004 as a school-based social network at
+ Harvard University.
+ The service was created by 19-year-old Mark Zuckerberg, a Harvard University
+ student, who ran it from a computer in his college room 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Brugger2015"
+literal "true"
+
+\end_inset
+
+.
+ Then four fellow students joined him 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Nations2019"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Facebook's rapid growth began as soon as it became available and has continued
+ through the years.
+ In the last 10 years, Facebook has accumulated more than one billion users
+ worldwide.
+ The aim of its creators has always been to connect the world 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cava2014"
+literal "false"
+
+\end_inset
+
+.
+ This service is also a powerful media machine for the flow of information.
+\end_layout
+
+\begin_layout Subsubsection
+Machine Learning
+\end_layout
+
+\begin_layout Standard
+Data analysis is a process of cleaning, transforming, and modeling data
+ to discover useful information for business decision making 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Tukey1962"
+literal "false"
+
+\end_inset
+
+.
+ It works based on analyzing the past to make future decisions.
+ There are several types of data analysis techniques based on business and
+ technology.
+ For example 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Bernard1998"
+literal "false"
+
+\end_inset
+
+: Text Analysis, is a method to discover a pattern in a large data set using
+ databases or data mining tools; Statistical Analysis uses past data to
+ show what happened; Diagnostic Analysis identifies patterns behavior of
+ data by finding the cause from the insight found in Statistical Analysis;
+ Predictive Analysis makes predictions about future outcomes based on current
+ or past data; and Prescriptive Analysis combines the insight from all previous
+ analysis to determine which action to take in a current problem or decision.
+ This project uses Predictive Analysis, specifically Machine Learning.
+\end_layout
+
+\begin_layout Standard
+Machine Learning is a subfield of artificial intelligence that provides
+ systems the ability to automatically learn and improve from experience
+ without being explicitly programmed 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Pedregosa2011"
+literal "true"
+
+\end_inset
+
+.
+ Machine Learning focuses on the development of computer programs that can
+ access data and use it to learn by themselves.
+ The two most popular methods for training Machine Learning are called Supervise
+d and Unsupervised Learning 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Love2002"
+literal "true"
+
+\end_inset
+
+.
+ Supervised Learning helps to build a concise model of the distributions
+ of class labels in terms of predictor features.
+ Unsupervised Learning uses information that is neither classified nor labeled.
+ The algorithm acts on that information without guidance 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Kotsiantis2007"
+literal "true"
+
+\end_inset
+
+.
+ In this research work we use four Supervised Machine Learning algorithms.
+ 
+\end_layout
+
+\begin_layout Standard
+There are several applications for Machine Learning.
+ The most significant is data mining, which helps in the analysis of big
+ data and is also useful to establish relationships between multiple features
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maglogiannis2007"
+literal "true"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Web application
+\end_layout
+
+\begin_layout Standard
+A web application is any computer program that performs a specific function
+ by using a web browser at the client side.
+ The application can be as simple as a message board or a contact form on
+ a website or as complex as a word processor 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Hadley2006"
+literal "false"
+
+\end_inset
+
+.
+ A client-server environment is one in which multiple computers share informatio
+n such as entering information into a database.
+ The "client" is the application used to enter the information, and the
+ "server" is the application used to process and store the information.
+ A web application relieves the developer of the responsibility of building
+ a client for a specific type of computer or a specific operating system,
+ so anyone can use the application along as they have Internet access 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Daniel2019"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Web server
+\end_layout
+
+\begin_layout Standard
+A web server is server software, or hardware dedicated to run this software,
+ which can satisfy client requests on the World Wide Web.
+ A web server can, in general, contain one or more websites.
+ A web server processes incoming network requests over HTTP and several
+ other related protocols 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Macaulay2019"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The web application created in this research work runs on the Flask
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://flask.palletsprojects.com/en/1.1.x/"
+target "https://flask.palletsprojects.com/en/1.1.x/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ micro web framework, which works as a web server in our case.
+ Micro frameworks are normally frameworks with little to no dependencies
+ to external libraries 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Maia2015"
+literal "false"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Flask provides tools, libraries, and technologies that allow to build a
+ web application with Python.
+ A web application can be composed of web pages, blogs or even a commercial
+ website.
+ Flask allows to work with Python for the methods and actions and also with
+ HTML and CSS for the creation of the page view.
+\end_layout
+
+\begin_layout Subsection
+Related Work
+\end_layout
+
+\begin_layout Standard
+This project is inspired by the work presented by a computer science master's
+ student at Middle East University.
+ Magdy Salama works in social media for the Middle East and North Africa
+ Union (MENA).
+ In his research work in a course taught by Dr.
+ Harvey Alférez, he obtained the data from the Facebook page of the Hope
+ Channel Middle East Media Center.
+ He included in the data set the features that he considered most important
+ for a good classification of the post.
+ The features that were chosen for the data set were: paid/unpaid, post
+ type, month, period of day, content type, tone of voice, religious/nonreligious
+, focal gender, focal age, animation, category, and language.
+ The classes in the data set were as follows: good, very good, bad, and
+ very bad.
+ Salama created a classification model with the data set via a feed forward
+ back propagation neural network.
+\end_layout
+
+\begin_layout Standard
+Also, several research works that propose Machine Learning solutions have
+ been published at the School of Engineering and Technology of Montemorelos
+ University.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Aguilar2020"
+literal "false"
+
+\end_inset
+
+, the authors use deep learning and image recognition to create a mobile
+ application to detect difficult airway.
+ They used 240 images for model training to classify the following classes:
+ Mallampati 1-2 for low risk of difficult airway and Mallampati 3-4 for
+ high risk.
+ 
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Quiroz2020"
+literal "false"
+
+\end_inset
+
+, the authors use deep learning for image recognition of Legacy blueberries
+ in the rooting stage that can be used in smart farms in Chile.
+ Legacy blueberry is a variety of Southern Highbush blueberry.
+ This species constitutes 80% of the blueberry crops in Chile.
+ Specifically, they propose an image recognition approach based on a convolution
+al neural network (CNN) to detect the presence of trays with living blueberry
+ plants, the presence of trays without living plants, and the absence of
+ trays.
+ The average results of the evaluation of the predictive model are as follows:
+ accuracy: 86%, precision: 86%, recall: 88%, and F1-score: 86%.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sylnice2018"
+literal "false"
+
+\end_inset
+
+, the authors propose a solution for the dynamic evolution of simulated
+ autonomous cars in the open world through tactics.
+ Specifically, for an autonomous car to drive by itself, it needs to learn.
+ A safe and economic way to teach a self-driving car to drive by itself
+ is through simulation.
+ However, current car simulators are based on closed world assumptions,
+ where all possible events are already known as design time.
+ Nevertheless, during the training of a self-driving car, it is impossible
+ to account for all the possible events in the open world, where several
+ unknown events may arise (i.e., events that were not considered at design
+ time).
+ Instead of carrying out particular adaptations for known context events
+ in the closed world, the system architecture should evolve to safely reach
+ a new state in the open world.
+ In this research work, their contribution was to extend a car simulator
+ trained by means of Machine Learning to evolve at run time with tactics
+ when the simulation faces unknown context events.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Espinoza2018"
+literal "false"
+
+\end_inset
+
+, the authors use convolutional neural networks to achieve the automatic
+ detection of glaucoma.
+ Glaucoma is a disease that damages the optic nerve and becomes chronic
+ as time progresses.
+ Its early detection is vital for treatment.
+ Although there are tools to carry out the analysis of the optic nerve,
+ they do not automatically detect this illness.
+ The experiments performed obtained an average accuracy of 99%.
+\end_layout
+
+\begin_layout Standard
+In 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Marin2015"
+literal "false"
+
+\end_inset
+
+, the authors propose a low cost software that automatically and objectively
+ differentiates between a melanoma lesion and a benign nevus in a simple,
+ non-invasive manner.
+ Their approach is based on the “ABCDE” classification of lesions, image
+ processing, and artificial neural networks.
+ The software was developed using images of previously diagnosed malignant
+ melanomas and non-malignant suspicious moles, obtaining a sensibility of
+ 76.56% and a specificity of 87.58%.
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Subsection
+Methodology
+\end_layout
+
+\begin_layout Standard
+This section presents the methodology of this research project.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Data retrieval
+\end_layout
+
+\begin_layout Standard
+The first step in the development of this project was to look for the data
+ set to be used in the experiments.
+ For convenience, the data related to the performance of Facebook posts
+ on the Facebook page of Montemorelos University was used as a case study
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://www.facebook.com/UniMontemorelos/"
+target "https://www.facebook.com/UniMontemorelos/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This page is in constant activity with several administrators who post messages,
+ for instance, with images of the events carried out in the campus or with
+ general announcements.
+ The data from the Facebook page of Montemorelos University was collected
+ manually taking into account mainly the type of post (image, video or text),
+ and its scope.
+ The data set was created with the information of 220 posts compiled from
+ January to October, 2019.
+ 
+\end_layout
+
+\begin_layout Standard
+Specifically, the data set contains the following features:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Type:
+\emph default
+ if the post was a video, a photo, a link, or multiple photos.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Date:
+\emph default
+ the date in which the post was posted.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Hour:
+\emph default
+ the time of the day when the post was posted.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Share:
+\emph default
+ the number of times the post was shared.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Like:
+\emph default
+ the number of likes or reactions that the post obtained.
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Comments:
+\emph default
+ the number of the interactions in terms of comments with respect to the
+ post.
+\end_layout
+
+\begin_layout Standard
+The impact of each post was manually classified with the following formula:
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hspace{}
+\length 4em
+\end_inset
+
+
+\begin_inset Formula $(x_{1}*1)+(x_{2}*2)+(x_{3}*3)=success$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ represents the number of likes or reaction that the post had, 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ represents the number of comments, and 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+ represents the number of times that people shared the post.
+ Based on these results, we calculated the maximum and minimum values to
+ classify a posts as High (25 or higher), Medium (16-24), or Low (15 or
+ lower).
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ The impact of the posts is considered as the class to be used to train
+ the model.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tool development (Backend)
+\end_layout
+
+\begin_layout Standard
+Before creating the web application, the four classification algorithms
+ used in this research work were implemented with Scikit-learn
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://scikit-learn.org/stable/"
+target "https://scikit-learn.org/stable/"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ version 1.13.
+ 
+\begin_inset CommandInset ref
+LatexCommand labelonly
+reference "Appendix A"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the source code of the Python script described in this section.
+ Also, the source code for this project is available online
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/FacebookPostsPredictor"
+target "https://github.com/ADLAYstephanyLEVY/FacebookPostSuccessPredictor"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ The four algorithms used in this research work are as follows.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+K-Nearest Neighbor (KNN)
+\series default
+: It is a simple algorithm that stores all available cases and classifies
+ new cases by a majority vote of its 
+\emph on
+k
+\emph default
+ neighbors as shown in Listing 1.
+\end_layout
+
+\begin_layout Standard
+In Line 1 the function is declared with four parameters related to the training
+ (xTrain) and test (xTest) feature values and their classes (yTrain and
+ yTest).
+ Line 2 calls the function KNeighborsClassifier().
+ The fit function in line 3 creates the classification model and the score
+ function in line 4 returns the accuracy of the model.
+ In Line 5 the prediction based on the given training set (xTest) is saved
+ in a variable (KNNpredict).
+ Line 6 returns the accuracy of the model by means of comparing the classificati
+on results of the model with the real results in yTest.
+ 
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "knn.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={KNN implementation.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Logistic Regression (LR)
+\series default
+: It is a classification algorithm used to estimate discrete values based
+ on a given set of independent variables.
+ It predicts the probability of occurrence of an event by fitting data to
+ a 
+\shape italic
+logit function.
+ 
+\end_layout
+
+\begin_layout Standard
+In line 1, the function is declared with parameters related to the training
+ and testing data sets.
+ Line 2 calls the function LogisticReg().
+ The fit function in line 3 creates the classification model and the score
+ function in line 4 returns the accuracy of the model.
+ In Line 5 the prediction based on the given training set (xTest) is saved
+ in a variable (LRPredict).
+ Line 6 returns the accuracy of the model.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "logreg.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={ LR implementation.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Support Vector Machine (SVM)
+\series default
+: In this classification algorithm, each data point is plotted in an n-dimension
+al (
+\emph on
+n
+\emph default
+ being the number of features) space where the value of each feature is
+ the value of a particular coordinate.
+ Then a line called 
+\shape italic
+separating hyper plane
+\shape default
+ or (
+\shape italic
+decision boundary
+\shape default
+) splits the data points between two or more groups of data.
+ The further the data points from the 
+\shape italic
+decision boundary
+\shape default
+, the more confident the algorithm is about the prediction.
+ The closest data points to the separating hyper plane are known as 
+\shape italic
+support vectors
+\shape default
+.
+ Listing 3 shows how to call the SVM method.
+\end_layout
+
+\begin_layout Standard
+In line 1, the function is declared with parameters related to the training
+ and testing data sets.
+ Line 2 calls the function SuperVectorMachine().
+ The fit function in line 3 creates the classification model and the score
+ function in line 4 returns the accuracy of the model.
+ In Line 5 the prediction based on the given training set (xTest) is saved
+ in a variable (SVMpredict).
+ Line 6 returns the accuracy of the model.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "svm.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={SVM implementation.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Decision Trees (DT)
+\series default
+: In this classification algorithm, the data is split into two or more homogeneo
+us sets based on most significant attributes that makes the sets distinct.
+ 
+\end_layout
+
+\begin_layout Standard
+In line 1, the function is declared with parameters related to the training
+ and testing data sets.
+ Line 2 calls the function DecisionTree().
+ The fit function in line 3 creates the classification model and the score
+ function in line 4 returns the accuracy of the model.
+ In Line 5 the prediction based on the given training set (xTest) is saved
+ in a variable (DTPredict).
+ Line 6 returns the accuracy of the model.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "tree.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={DT implementation.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Listing 5 presents the code used to upload a data set of Facebook posts
+ to the web application and perform the training with the aforementioned
+ classifiers.
+\end_layout
+
+\begin_layout Standard
+In line 1, the route is mapped to the upload_file function.
+ Line 2 defines the function “upload_file()”.
+ Line 3 verifies if the POST request method is being used.
+ The POST method is used to send data to a server to create/update a resource.
+ The data sent to the server with POST is stored in the request body of
+ the HTTP request.
+ Lines 4-7 show how the file is uploaded.
+ The requested file has to be in CSV format.
+ When the data has been loaded, it is extracted in lines 8-10 to be used
+ by the classification algorithms in lines 11-14.
+ Specifically, in line 10, the training and test data are split from the
+ original data set.
+ The “test_size” parameter specifies to the function that only 20% of the
+ data will be used for testing, the other 80% will be used for training.
+ In lines 15-18, the sorted() function is used to sort the accuracy values
+ of each classification model.
+ Then, the max() function chooses the maximum accuracy.
+ 
+\end_layout
+
+\begin_layout Standard
+Finally, the best predictor, i.e., the one with the highest accuracy value,
+ is saved with pickle.dump() function for later use.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "uploaded.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={ Upload function.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A form was created for inserting the feature values of a new Facebook post
+ in order to predict its impact.
+ Listing 6 shows how the feature values collected in a form are submitted
+ to the server.
+ Then, the server uses the feature values to return the classification of
+ the post based on the model saved previously.
+ Specifically, Line 4 shows how the form collects the data that was input
+ in the form.
+ Then in line 5 the data is saved in a list.
+ On line 6, the result from line 5 is converted to a list of integers (in
+ Python 3, the result had to be converted from a map to a list).
+ Line 7 is used to avoid having an array that is out of boundaries.
+ Line 8 shows how the saved model is loaded with pickle.load() function.
+ Then the data collected from the form is put into a list to use the predict()
+ function.
+ Then line 10 saves the result in a variable.
+ In lines 11-15, the prediction of the new Facebook post is returned based
+ on the classification.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "predict.txt"
+lstparams "language=Python,breaklines=true,captionpos=b,frame=tb,caption={Predict function.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tool development (Frontend)
+\end_layout
+
+\begin_layout Standard
+The steps that were carried out to develop the frontend of the application
+ are described as follows: 
+\end_layout
+
+\begin_layout Standard
+1) In the first step the CSV file with the information of the Facebook posts
+ is uploaded.
+ Listing 7 shows the source code behind the form shown in Fig.
+ 4.
+ 
+\begin_inset CommandInset ref
+LatexCommand labelonly
+reference "Appendix B"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ contains the complete source code for the upload interface.
+\end_layout
+
+\begin_layout Standard
+Line 1 in Listing 7 specifies that the form is submitted to the uploader
+ function, which is running on Flask.
+ Line 3 allows the user to choose a file to be uploaded.
+ Line 4 shows the button code that is used to submit the form to the server.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "index.txt"
+lstparams "language=HTML,breaklines=true,captionpos=b,frame=tb,caption={Form to submit a CSV file of historical Facebook posts to the server}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The file to be uploaded must contain the following feature values: post
+ type, post date, post hour, number of shares, reactions, and comments.
+ The last column indicates the classification of the post.
+ This classification has been already given by the user.
+ For instance, Table 1 shows an example of the values given for three instances
+ taken from the Facebook page of Montemorelos University.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Sample input instance taken from the data set
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="9">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+PostMessage
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Type
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Date
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Hour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Share
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Reactions
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Comments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Success
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" rotate="90" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size scriptsize
+Class
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+Queremos...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Video
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+02/09/19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+19:00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+25.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Medium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+¿Sabes de...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Pictures
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23/10/19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17:00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Low
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+El próximo...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Photo
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+18/09/19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+15:29
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+124
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+54.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+High
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\begin_inset Quotes eld
+\end_inset
+
+En 2009, la...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Link
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+22/04/19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+14:26
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+7.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size scriptsize
+Low
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The data set used in the experiments, with data taken from the Facebook
+ page of Montemorelos University, is available online
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/ADLAYstephanyLEVY/FacebookPostSuccessPredictor"
+target "https://github.com/ADLAYstephanyLEVY/FacebookPostSuccessPredictor"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename LYX source/Upload_file_interface.JPG
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Upload file interface.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+Listing 8 shows how the accuracy value of the model with the highest accuracy
+ is called with the POST request method shown on Line 1.
+ Line 3 shows the “bestPredictor” variable that brings the result of the
+ highest accuracy value.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "modelLoaded.txt"
+lstparams "language=HTML,breaklines=true,captionpos=b,frame=tb,caption={Best predictor printed in the user interface.}"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3) In this step, the user inputs the feature values of the new Facebook
+ post as shown in Figure 5.
+ 
+\begin_inset CommandInset ref
+LatexCommand labelonly
+reference "Appendix C"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ shows the code to insert the feature values from the form.
+\end_layout
+
+\begin_layout Standard
+4) The web application uses the previously saved model with the best accuracy
+ result to classify the new Facebook post.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename LYX source/User_interface_to_insert_the_feature_values.JPG
+	lyxscale 50
+	scale 37
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+User interface to insert the feature values.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5) In Fig.
+ 4 the web application returns the classification result for the following
+ feature values: post type, date and hour when the post will be published,
+ and number of expected shares, reactions, and comments.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename LYX source/Interface_for_the_prediction_result.JPG
+	lyxscale 60
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interface for the prediction result.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Outcomes
+\end_layout
+
+\begin_layout Standard
+In this research work, the Montemorelos University Facebook page was used
+ as a case study.
+ By training the four classification algorithms with the collected data
+ set we obtained good results.
+ Here we present the resulting accuracy of each algorithm:
+\end_layout
+
+\begin_layout Itemize
+LR Accuracy : 65.09%
+\end_layout
+
+\begin_layout Itemize
+KNN Accuracy: 79.54%
+\end_layout
+
+\begin_layout Itemize
+SVM Accuracy : 68.18%
+\end_layout
+
+\begin_layout Itemize
+DT Accuracy: 86.36%
+\end_layout
+
+\begin_layout Standard
+In the evaluation, we also used the precision, recall, and F1-score values.
+ Precision is the fraction of relevant instances among the retrieved instances,
+ while recall is the fraction of the total number of relevant instances
+ that were actually recovered.
+ Therefore, both precision and recall are based on an understanding and
+ a measure of relevance 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Koehrsen2018"
+literal "false"
+
+\end_inset
+
+.
+ The F1-score is used to combine the precision and recovery measurements
+ into a single value.
+ This value assumes that precision and recall matter equally.
+ Tables 1-4 show the results for precision, recall, and F1-score in the
+ case of the posts in the Facebook page of Montemorelos University.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Precision And Recall With Lr In The Case Of The Facebook Posts Of Montemorelos
+ University.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+F1-score
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Support
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+MEDIUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.25
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+macro avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.60
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+weighted avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Precision and recall with KNN in the case of the Facebook posts of Montemorelos
+ University.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+F1-score
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Support
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.88
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+MEDIUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.69
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+macro avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.81
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.79
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+weighted avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Precision and recall with SVM in the case of the Facebook posts of Montemorelos
+ University.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+F1-score
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Support
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.61
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.95
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.78
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.58
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.67
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+MEDIUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+1.00
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.50
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+macro avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.62
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.64
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+weighted avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.76
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.68
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Precision and recall with DT in the case of the Facebook posts of Montemorelos
+ University.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Precision
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Recall
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+F1-score
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+Support
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+HIGH
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.94
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.85
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.89
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+20
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+LOW
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.92
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+MEDIUM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.71
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.83
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+0.77
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\size small
+12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+macro avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+weighted avg
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.86
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+0.87
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size small
+44
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Discussion
+\end_layout
+
+\begin_layout Standard
+We used four classification algorithms to predict the post success of the
+ Facebook page of Montemorelos University.
+ According to the results, the DT algorithm has the best accuracy (86%),
+ precision (87%), recall (86%), and F1-score (87%) values.
+ 
+\end_layout
+
+\begin_layout Section
+Conclusions and Future Work
+\end_layout
+
+\begin_layout Standard
+This research work shows how Machine Learning can be used to predict the
+ success of new posts on Facebook.
+ As a case study, we used information collected from the Facebook page of
+ Montemorelos University.
+ In order to predict the success of Facebook posts, we developed a web applicati
+on.
+ This web application allows the user to upload a data set of the performance
+ of a Facebook page.
+ Our tool uses this information to train 4 classification models with 4
+ different algorithms.
+ In the case of the data set from Montemorelos University, we got the following
+ accuracy results: KNN=80%, LR=66%, SVM=68%, and DT=86%.
+ We also evaluated the models in terms of precision, recall and F1-score.
+ The best model was the one trained with the DT algorithm.
+ Our tool chooses the best model with the highest value and shows the classifica
+tion result for a new Facebook post.
+ 
+\end_layout
+
+\begin_layout Standard
+As future work, the sample data from the Facebook posts will be extended
+ in order to improve the classification results.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintCited"
+bibfiles "References"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Appendix A : SOURCE CODE FOR MAIN SCRIPT
+\series default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Appendix A"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "mainscript-py.txt"
+lstparams "captionpos=b,aboveskip=3mm,belowskip=3mm,columns=1,breaklines=true,tabsize=4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Appendix B : SOURCE CODE FOR INDEX.HTML
+\series default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Appendix B"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "index-html.txt"
+lstparams "captionpos=b,aboveskip=3mm,belowskip=3mm,columns=1,breaklines=true,tabsize=4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Appendix C : SOURCE CODE FOR UPLOAD.HTML
+\series default
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "Appendix C"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand lstinputlisting
+filename "upload-html.txt"
+lstparams "captionpos=b,aboveskip=3mm,belowskip=3mm,columns=1,breaklines=true,tabsize=4"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{titlepage}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
