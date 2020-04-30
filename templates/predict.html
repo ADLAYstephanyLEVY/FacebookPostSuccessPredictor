@@ -5,8 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>Prediction</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+.footer{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: gray;
+color: white;
+text-align: center;
+}
+.predictor {
+  position: center;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+}
+.predict-form-title {
+  display: block;
+  width: 100%;
+  font-size: 39px;
+  color: gray;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 59px;
+}
+.wrap-input100 {
+  width: 25%;
+  position: center;
+  border: 1px solid #e6e6e6;
+  border-radius: 13px;
+  padding: 10px 30px 9px 22px;
+  margin-bottom: 20px;
+}
+.bg1 {background-color: #f7f7f7;}
+.label-input100 {
+  font-size: 15px;
+  color: #393939;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.input100 {
+  display: block;
+  width: 80%;
+  background: transparent;
+  font-size: 18px;
+  color: #555555;
+  line-height: 1.2;
+  padding-right: 15px;
+}
+.all-center{
+  position: center;
+  display: inline-block;
+}
+.form{
+    text-align: center;
+}
+.navbar a:hover {
+  background-color: #000;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+.active {
+  background-color: #4CAF50;
+}
+.navbar {
+  width: 100%;
+  background-color: gray;
+  overflow: auto;
+}
+</style>
+<header>
+    <div class="navbar">
+        <a class="active" href="//localhost:500"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook Post Predictor</a>
+        <a href="#"><i class="fa fa-info" aria-hidden="true"></i></i> More info</a>
+        <a href="https://adlyfany8.wixsite.com/curriculum"><i class="fa fa-fw fa-user"></i>Contact me</a>
+    </div>
+</header>
 <body>
-    <h3>I'M IN</h3>
+    <p>I'M IN</p>
+
+    <span class="predict-form-title"> Model:{{ model }} % </span>
+    <span class="predict-form-title"> Class: {{ classes }} </span>
+
+    <div class="footer">
+        <p>By Adlay Levy<p>
+    </div>
 </body>
 </html>
